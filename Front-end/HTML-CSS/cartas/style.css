@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'mi estilo';
+    src: url(./fonts/Note_this.ttf);
+
+}
+
+@font-face {
+    font-family: 'titulo';
+    src: url(./fonts/kulminoituva.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+
+}
+
+.contenedor {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.ficha {
+    position: absolute;
+    transform-origin: bottom center;
+    background-image: url(./images/nota.jpg);
+    background-size: 100% 133px;
+    background-repeat: repeat;
+    width: 180px;
+    height: 500px;
+    margin: 2px;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 10px;
+    text-align: center;
+    transition: all 5s linear;
+
+}
+
+/*.ficha:hover {
+    z-index: 10;
+    transform: rotate(0deg) scale(1.05);
+
+}*/
+
+.ficha img {
+    background-color: whitesmoke;
+    border-radius: 7px;
+    width: 150px;
+    height: 150px;
+
+}
+
+.ficha p {
+    font-family: 'mi estilo';
+    font-size: 17px;
+
+}
+
+.ficha h1 {
+    font-family: 'titulo';
+
+}
+
+.f1 {
+    transform: rotate(-40deg);
+}
+
+.f1:hover {
+    transform: rotate(-40deg);
+    z-index: 10;
+    scale(1.1);
+}
+
+.f2 {
+    transform: rotate(-20deg);
+}
+
+.f2:hover {
+    transform: rotate(-20deg);
+    z-index: 10;
+}
+
+.f3 {
+    transform: rotate(0deg);
+}
+
+.f3:hover {
+    transform: rotate(0deg);
+    z-index: 10;
+}
+
+.f4 {
+    transform: rotate(20deg);
+}
+
+.f4:hover {
+    transform: rotate(20deg);
+    z-index: 10;
+}
+
+.f5 {
+    transform: rotate(40deg);
+}
+
+.f5:hover {
+    transform: rotate(40deg);
+    z-index: 10;
+}
+
+/*.f1 {
+    transform: rotate(-40deg);
+
+}
+
+.f2 {
+    transform: rotate(-20deg);
+
+}
+
+.f3 {
+    transform: rotate(0deg);
+
+}
+
+.f4 {
+    transform: rotate(20deg);
+
+}
+
+.f5 {
+    transform: rotate(40deg);
+
+}*/

@@ -1,0 +1,67 @@
+/*table#tabla1 tfoot {
+    background-color: aqua;
+
+}
+
+table#tabla2 tr:last-child {
+    background-color: aqua;
+
+}
+
+table#tabla1 tbody tr:nth-child(odd) {
+    background-color: #ccc;
+
+}
+
+table#tabla2 tbody tr:nth-child(odd) {
+    background-color: #ccc;
+
+}
+
+table tr:hover {
+    background-color: yellow;
+
+}*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+
+table,
+th,
+td {
+    border: 1px dotted #e0e0e0;
+    border-collapse: collapse;
+
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+
+}
+
+th {
+    background-color: #78911e;
+    color: aliceblue;
+    border: none;
+
+}
+
+.Hora {
+    border-right: 2px solid #78911e;
+
+}
+
+.yellow {
+    background-color: #d4a017;
+    color: #d3d3d3;
+
+}

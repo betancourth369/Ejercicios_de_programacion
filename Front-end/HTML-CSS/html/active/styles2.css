@@ -1,0 +1,42 @@
+.primero {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transition: width 3s;
+
+}
+
+.primero:hover {
+    width: 300px;
+
+}
+
+.segundo {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: margin-left 3s, background-color 3s;
+    border: 1px solid black;
+
+}
+
+.segundo:hover {
+    margin-left: 500px;
+    background-color: white;
+
+}
+
+.tercero {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    transition: opacity 3s;
+    border: 1px solid black;
+    opacity: 0;
+
+}
+
+.tercero:hover {
+    opacity: 1;
+
+}

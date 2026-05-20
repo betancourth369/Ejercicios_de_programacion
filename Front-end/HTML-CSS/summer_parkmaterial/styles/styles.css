@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "Lustria";
+    src: url('../fonts/Lustria/Lustria-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Niconne";
+    src: url('../fonts/Niconne/Niconne-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Mclaren";
+    src: url('../fonts/McLaren/McLaren-Regular.ttf');
+}
+
+body {
+    background-color: #222222;
+
+}
+
+.container {
+    background-image: url('../images/siteBackground.jpg');
+    margin: 20px;
+    padding: 15px;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+header h1 {
+    padding-left: 15px;
+    justify-content: left;
+    margin: 0;
+    font-family: 'Niconne';
+    font-size: 55px;
+    color: #e8190a;
+
+}
+
+header p {
+    padding-left: 15px;
+    padding-bottom: 15px;
+    justify-content: left;
+    margin: 0;
+    font-family: 'Lustria';
+    font-size: 13px;
+
+}
+
+header img {
+    padding-top: 20px;
+    padding-right: 10px;
+    justify-content: right;
+
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-family: 'Mclaren';
+    font-size: 22px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #444444;
+    border-left: 1px solid #444444;
+    padding-inline: 20px;
+
+}
+
+#Home {
+    color: #e8190a;
+    border-left: none;
+
+}
+
+.part1 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+
+}
+
+.part1 section {
+    width: 25%;
+
+}
+
+.part1 img {
+    width: 100%;
+
+}

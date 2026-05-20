@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./style/css.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Biblioteca</h1>
+    </header>
+    <form action="#" method="post">
+        <label for="Isbn">Isbn</label>
+        <input type="text" name="Isbn" id="Isbn">
+
+        <label for="Titulo">Titulo</label>
+        <input type="text" name="Titulo" id="Titulo">
+
+        <label for="Autor">Autor</label>
+        <input type="text" name="Autor" id="Autor">
+
+        <label for="Genero">Genero</label>
+        <select name="Genero" id="Genero">
+            <option value="0">Seleccione un Genero</option>
+            <option value="Comedia">Comedia</option>
+            <option value="Terror">Terror</option>
+            <option value="Drama">Drama</option>
+            <option value="Fantasia">Fantasia</option>
+        </select>
+
+        <label for="Cantidad">Cantidad</label>
+        <input type="number" name="Cantidad" id="Cantidad">
+
+        <label for="Psinopsis">Psinopsis</label>
+        <textarea name="Psinopsis" id="Psinopsis"></textarea>
+
+
+
+
+        <div id="botones">
+            <button type="button" id="btnGuardar">Guardar</button>
+            <button type="reset">Borrar</button>
+        </div>
+    </form>
+
+    <div id="divTabla">
+        <table id="tablaLibros">
+            <thead>
+                <tr>
+                    <th>Isbn</th>
+                    <th>Titulo</th>
+                    <th>Autor</th>
+                    <th>Genero</th>
+                    <th>Psinopsis</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
