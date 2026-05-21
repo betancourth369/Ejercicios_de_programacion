@@ -7,7 +7,7 @@
 ## 🧑‍💻 Sobre Mí & Mi Recorrido
 Vengo del mundo de los **Sistemas Microinformáticos**, lo que me dio una base sólida en infraestructura, hardware y **administración básica de Linux** (manejo de terminal, scripts y entornos). 
 
-Mi paso por **42 Urduliz** me permitió desarrollar una fuerte lógica de programación [1], donde me enfrenté al **lenguaje C**. Actualmente, estoy enfocado en el desarrollo de software, dominando la programación orientada a objetos y las tecnologías web.
+Mi paso por **42 Urduliz** me permitió desarrollar una fuerte lógica de programación, donde me enfrenté al **lenguaje C**. Actualmente, estoy enfocado en el desarrollo de software, dominando la programación orientada a objetos y las tecnologías web.
 
 ---
 
