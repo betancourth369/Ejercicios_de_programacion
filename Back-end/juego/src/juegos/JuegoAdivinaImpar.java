@@ -9,12 +9,12 @@ public class JuegoAdivinaImpar extends JuegoAdivinaNumero{
 
     @Override
     public void muestraNombre() {
-        System.out.println("Adivina el numero IMPAR");
+        System.out.println("ADIVINA EL NUMERO IMPAR");
     }
 
     @Override
     public void muestrainfo() {
-        System.out.println("Encuentra el  numero IMPAR entre 0 y 10");
+        System.out.println("Encuentra el  numero IMPAR entre 0 y 10," + " tendras un total de " + getTodasVidas() + " vidas");
     }
 
     @Override
@@ -33,8 +33,6 @@ public class JuegoAdivinaImpar extends JuegoAdivinaNumero{
 
         return false;
     }
-
-
 
     
 }

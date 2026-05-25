@@ -13,6 +13,17 @@ public class JuegoAdivinaNumero extends Juego implements Jugable {
         this.numAdivinar = numAdivinar;
     }
 
+
+    @Override
+    public void muestraNombre() {
+        System.out.println("ADIVINA NUMERO");
+    }
+
+    @Override
+    public void muestrainfo() {
+        System.out.println("Encuentra el  numero secreto entre 0 y 10," + " tendras un total de " + getTodasVidas() + " vidas" );
+    }
+
     public boolean validaNumero(int numUser) {
 
         if(numUser >= 0 && numUser <= 10){
@@ -27,6 +38,8 @@ public class JuegoAdivinaNumero extends Juego implements Jugable {
 
     @Override
     public void juega() {
+        muestraNombre();
+        muestrainfo();
         reiniciarPartida();//llamada al metodo
         System.out.println("Dame un numero entre 0 y 10");//mensaje para el user
         Scanner teclado = new Scanner(System.in);//esto es para poder recibir por el teclado (importa la clase scanner )
@@ -57,19 +70,10 @@ public class JuegoAdivinaNumero extends Juego implements Jugable {
 
         } while (getVidasRestantes() != 0);
 
-        teclado.close();
+
 
     }
 
-    @Override
-    public void muestraNombre() {
-        System.out.println("Adivina numero");
-    }
-
-    @Override
-    public void muestrainfo() {
-        System.out.println("Encuentra el  numero secreto entre 0 y 10");
-    }
 
 
 }
