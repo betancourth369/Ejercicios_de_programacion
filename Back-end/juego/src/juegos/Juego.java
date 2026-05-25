@@ -25,7 +25,7 @@ public abstract class Juego {
        if (vidasRestantes == 0){
            System.out.println("GAME OVER!!");
            return false;
-       }
+       }else
         System.out.println("Incorrecto, vidas restantes: " + vidasRestantes);
        return true;
     }
