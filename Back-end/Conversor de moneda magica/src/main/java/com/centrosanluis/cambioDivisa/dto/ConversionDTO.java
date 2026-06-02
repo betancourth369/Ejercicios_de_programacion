@@ -8,7 +8,6 @@ private String mensajeError;
 
 
 public ConversionDTO(double euros) {
-	super();
 	this.euros = euros;
 }
 
