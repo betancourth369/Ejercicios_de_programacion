@@ -22,9 +22,12 @@ import jakarta.servlet.http.HttpServletResponse;
 			String euroText = req.getParameter("euros");
 			double euros = Double.parseDouble(euroText);
 			
-			ConversorModel coversor = new ConversorModel();
+			ConversorModel cModel = new ConversorModel();
+			ConversionDTO conversor = new ConversionDTO(euros);
 			
-			
+			ConversionDTO resultadoConversion = cModel.calcularGaleones(conversor);
+
+			System.out.println(resultadoConversion.getGaleones());
 			
 		}
 		
