@@ -1,10 +1,15 @@
 package com.poniente.gestion.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+import java.util.List;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 public class Maestre {
     @Id
@@ -14,4 +19,9 @@ public class Maestre {
     private String nombre;
     private String especialidad;
     private int anoGraduacion;
+
+    @OneToMany
+    @AssociationOverride(name = "id.maestre",
+            joinColumns = @JoinColumn(name = "maestre_id") )
+    private List<Recaudacion> recaudaciones;
 }

@@ -1,9 +1,15 @@
 package com.poniente.gestion.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 public class GranCasa {
 
@@ -17,4 +23,9 @@ public class GranCasa {
 
     @OneToMany(mappedBy = "granCasa")
     private List<CasaVasalla> casasVasallas;
+
+    @OneToMany
+    @AssociationOverride(name = "id.granCasa",
+    joinColumns = @JoinColumn(name = "gran_casa_id") )
+    private List<Recaudacion> recaudaciones;
 }
